@@ -1,30 +1,29 @@
 package algoritms;
 
-import java.util.Arrays;
-
 /**
  * Алгоритм сортировки выбором. Работает за О(n^2).
  */
 public class SelectionSort {
-    public static int[] sort(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
+    /**
+     * Сортирует указанный массив объектов, реализующих интерфейс Comparable, по возрастанию.
+     *
+     * @param array Массив, который нужно отсортировать.
+     * @param <T> Тип элементов в массиве, должен реализовывать интерфейс Comparable для сравнения.
+     * @return Отсортированный массив.
+     */
+    public static <T extends Comparable<T>> T[] selectionSort(T[] array) {
+        for (int i = 0; i < array.length; i++) {
             int smallestIndex = i;
-            int smallest = arr[i];
-            for (int j = i + 1; j < arr.length; j++) {
-                if (smallest > arr[j]) {
+            T smallest = array[i];
+            for (int j = i + 1; j < array.length; j++) {
+                if (smallest.compareTo(array[j]) > 0) {
                     smallestIndex = j;
-                    smallest = arr[j];
+                    smallest = array[j];
                 }
             }
-            arr[smallestIndex] = arr[i];
-            arr[i] = smallest;
+            array[smallestIndex] = array[i];
+            array[i] = smallest;
         }
-        return arr;
-    }
-
-    public static void main(String[] args) {
-        int[] arr = new int[]{1, 22, 3, 12, 31, 1331, 31, 1, 0};
-
-        System.out.println(Arrays.toString(sort(arr)));
+        return array;
     }
 }
