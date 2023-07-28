@@ -1,5 +1,7 @@
 package algoritms;
-
+/**
+ * Бинарный поиск. Работает за О(log n).
+ */
 public class BinarySearch<T extends Comparable<T>> {
     T[] array;
 
