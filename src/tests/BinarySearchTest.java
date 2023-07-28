@@ -8,32 +8,30 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BinarySearchTest {
     static Integer[] array;
-    static BinarySearch<Integer> binarySearch;
 
     @BeforeAll
     static void create() {
         array = new Integer[]{1, 2, 10, 22, 34, 100};
-        binarySearch = new BinarySearch<>(array);
     }
 
     @Test
     void searchTest() {
-        int result = binarySearch.search(1);
+        int result = BinarySearch.search(array, 1);
         assertEquals(0, result);
 
-        result = binarySearch.search(22);
+        result = BinarySearch.search(array, 22);
         assertEquals(3, result);
 
-        result = binarySearch.search(-50);
+        result = BinarySearch.search(array, -50);
         assertEquals(-1, result);
 
-        result = binarySearch.search(500);
+        result = BinarySearch.search(array, 500);
         assertEquals(-1, result);
 
-        result = binarySearch.search(100);
+        result = BinarySearch.search(array, 100);
         assertEquals(5, result);
 
-        result = binarySearch.search(2);
+        result = BinarySearch.search(array, 2);
         assertEquals(1, result);
     }
 }

@@ -2,10 +2,10 @@ package algoritms;
 
 import java.util.Arrays;
 
+/**
+ * Алгоритмы рекурсии.
+ */
 public class Recursion {
-    public static void main(String[] args) {
-
-    }
     public static void countdown(int i) {
         System.out.println(i);
         if (i > 0) {

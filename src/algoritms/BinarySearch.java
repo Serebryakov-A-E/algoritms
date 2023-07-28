@@ -1,29 +1,36 @@
 package algoritms;
-/**
- * Бинарный поиск. Работает за О(log n).
- */
-public class BinarySearch<T extends Comparable<T>> {
-    T[] array;
 
-    public BinarySearch(T[] array) {
-        this.array = array;
-    }
-    
-    public int search(T element) {
+/**
+ * Класс, реализующий алгоритм бинарного поиска.
+ * Алгоритм работает за O(log n) для отсортированных массивов.
+ */
+public class BinarySearch {
+    /**
+     * Метод для выполнения бинарного поиска в отсортированном массиве.
+     *
+     * @param array   Отсортированный массив элементов, в котором будет выполняться поиск.
+     * @param element Элемент, который нужно найти.
+     * @param <T>     Тип элементов, которые могут быть найдены с помощью бинарного поиска.
+     * @return Индекс элемента в массиве, если он найден, иначе -1.
+     */
+    public static <T extends Comparable<T>> int search(T[] array, T element) {
         int low = 0;
         int high = array.length - 1;
 
+        // Пока диапазон поиска не сократится до одного элемента
         while (low <= high) {
             int middle = (low + high) / 2;
             T guess = array[middle];
+
+            // Сравниваем элемент в середине с искомым элементом
             if (guess.compareTo(element) == 0) {
-                return middle;
+                return middle; // Элемент найден, возвращаем его индекс
             } else if (guess.compareTo(element) < 0) {
-                low = middle + 1;
+                low = middle + 1; // Элемент в середине меньше искомого, сужаем диапазон поиска справа
             } else {
-                high = middle - 1;
+                high = middle - 1; // Элемент в середине больше искомого, сужаем диапазон поиска слева
             }
         }
-        return -1;
+        return -1; // Элемент не найден, возвращаем -1
     }
 }
