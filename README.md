@@ -13,5 +13,6 @@
 2. Valid Parentheses [Задача](https://leetcode.com/problems/valid-parentheses/) ---> [Решение](https://github.com/Serebryakov-A-E/algoritms/blob/master/src/AlgorithmicpProblems/ValidParentheses.java)
 3.  Longest Common Prefix [Задача](https://leetcode.com/problems/longest-common-prefix/) ---> [Решение](https://github.com/Serebryakov-A-E/algoritms/blob/master/src/AlgorithmicpProblems/LongestCommonPrefix.java)
 4.  Roman to Integer [Задача](https://leetcode.com/problems/roman-to-integer/) ---> [Решение](https://github.com/Serebryakov-A-E/algoritms/blob/master/src/AlgorithmicpProblems/RomanToInteger.java)
+5.  Remove Duplicates from Sorted Array [Задача](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) ---> [Решение](https://github.com/Serebryakov-A-E/algoritms/blob/master/src/AlgorithmicpProblems/RemoveDuplicatesFromSortedArray.java)
 
    
