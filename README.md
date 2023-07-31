@@ -15,5 +15,10 @@
 4.  Roman to Integer [Задача](https://leetcode.com/problems/roman-to-integer/) ---> [Решение](https://github.com/Serebryakov-A-E/algoritms/blob/master/src/AlgorithmicpProblems/RomanToInteger.java)
 5.  Remove Duplicates from Sorted Array [Задача](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) ---> [Решение](https://github.com/Serebryakov-A-E/algoritms/blob/master/src/AlgorithmicpProblems/RemoveDuplicatesFromSortedArray.java)
 6.  Remove Element [Задача](https://leetcode.com/problems/remove-element/) ---> [Решение](https://github.com/Serebryakov-A-E/algoritms/blob/master/src/AlgorithmicpProblems/RemoveElement.java)
+7.  Find the Index of the First Occurrence in a String [Задача](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/) ---> [Решение](https://github.com/Serebryakov-A-E/algoritms/blob/master/src/AlgorithmicpProblems/IndexOfTheFirstOccurrence.java)
+8.  Search Insert Position [Задача](https://leetcode.com/problems/search-insert-position/description/) ---> [Решение](https://github.com/Serebryakov-A-E/algoritms/blob/master/src/AlgorithmicpProblems/SearchInsertPosition.java)
+9.  Length of Last Word [Задача](https://leetcode.com/problems/length-of-last-word/) ---> [Решение](https://github.com/Serebryakov-A-E/algoritms/blob/master/src/AlgorithmicpProblems/LengthOfLastWord.java)
+10.  Plus One [Задача](https://leetcode.com/problems/plus-one/description/) ---> [Решение](https://github.com/Serebryakov-A-E/algoritms/blob/master/src/AlgorithmicpProblems/PlusOne.java)
+
 
    
